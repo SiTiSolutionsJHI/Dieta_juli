@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mi Plan Glow</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf3ea;--card:#fffaf4;--rose:#e8c4b8;--blush:#f5dfd3;--terra:#c48466;--brown:#6b4a3a;--soft:#a58170;--line:#ecd6c6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2b201b;--card:#382a23;--rose:#7a5648;--blush:#4a352c;--terra:#e0a184;--brown:#f3e2d5;--soft:#cdaf9f;--line:#5a4237}}
+:root[data-theme="dark"]{--bg:#2b201b;--card:#382a23;--rose:#7a5648;--blush:#4a352c;--terra:#e0a184;--brown:#f3e2d5;--soft:#cdaf9f;--line:#5a4237}
+html{scroll-padding-top:60px;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--brown);font-family:'Quicksand',system-ui,sans-serif;line-height:1.55}
+.script{font-family:'Dancing Script',cursive}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);display:flex;gap:8px;overflow-x:auto;padding:10px 14px;border-bottom:1px solid var(--line)}
+nav a{white-space:nowrap;text-decoration:none;color:var(--brown);background:var(--blush);padding:6px 14px;border-radius:99px;font-size:.85rem;font-weight:600}
+section{max-width:960px;margin:0 auto;padding:44px 18px 8px}
+h2{font-family:'Dancing Script',cursive;font-size:2.4rem;margin:0 0 4px;color:var(--terra)}
+.sub{color:var(--soft);margin:0 0 20px}
+.hero{text-align:center;padding:70px 18px 40px;background:linear-gradient(160deg,var(--blush),var(--bg))}
+.hero h1{font-family:'Dancing Script',cursive;font-size:clamp(3.2rem,12vw,5.5rem);margin:0;color:var(--terra);line-height:1}
+.hero p{max-width:520px;margin:12px auto;color:var(--soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px}
+.card .big{font-family:'Dancing Script',cursive;font-size:2.2rem;color:var(--terra);line-height:1.1}
+.card h3{margin:2px 0 6px;font-size:1rem}
+.card p,.card li{font-size:.9rem;margin:4px 0}
+ul{padding-left:18px;margin:6px 0}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px}
+.tabs button{font:inherit;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--brown);border-radius:99px;padding:7px 16px;cursor:pointer;white-space:nowrap}
+.tabs button.on{background:var(--terra);color:#fff;border-color:var(--terra)}
+.meal{display:grid;grid-template-columns:110px 1fr auto;gap:10px;padding:12px 0;border-bottom:1px dashed var(--line);align-items:start}
+.meal:last-child{border:0}
+.meal b.t{color:var(--terra);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.meal .n{font-weight:700}
+.meal .d{font-size:.87rem;color:var(--soft)}
+.meal .k{font-size:.78rem;text-align:right;white-space:nowrap;color:var(--soft)}
+@media(max-width:560px){.meal{grid-template-columns:1fr auto}.meal b.t{grid-column:1/3}}
+.pill{display:inline-block;background:var(--blush);border-radius:99px;padding:3px 12px;font-size:.8rem;font-weight:600;margin:2px 4px 2px 0}
+.shop{columns:2 280px;column-gap:14px}
+.shop .card{break-inside:avoid;margin-bottom:14px}
+.shop label{display:flex;gap:8px;align-items:flex-start;font-size:.9rem;padding:3px 0;cursor:pointer}
+.shop input{accent-color:var(--terra);margin-top:4px}
+.shop input:checked+span{text-decoration:line-through;opacity:.5}
+.empty{border:2px dashed var(--rose);border-radius:22px;padding:36px;text-align:center;color:var(--soft)}
+.avoid li::marker{content:"✿ "}
+footer{text-align:center;padding:40px 18px 50px;color:var(--soft);font-size:.8rem}
+@media print{nav{display:none}.card{break-inside:avoid}}
+</style></head><body>
+<div class="hero"><div class="script" style="font-size:1.5rem;color:var(--soft)">tu plan personalizado</div>
+<h1>Mi Plan Glow ✿</h1>
+<p>Comer rico, sentirte increíble y ver cómo tu cuerpo cambia: piel bonita, más energía y mejor ánimo. Sin sufrir, sin aburrirte.</p></div>
+<nav><a href="#meta">Mi meta</a><a href="#habitos">Hábitos</a><a href="#evitar">Evitar</a><a href="#plan">Plan semanal</a><a href="#rutinas">Rutinas</a><a href="#super">Súper</a><a href="#tips">Tips</a></nav>
+
+<section id="meta"><h2>Mi meta</h2><p class="sub">Bajar grasa, definir y mantener (o hacer crecer) el músculo.</p>
+<div class="grid">
+<div class="card"><div class="big">1,650</div><h3>kcal días de entreno</h3><p>Lunes, miércoles y viernes.</p></div>
+<div class="card"><div class="big">1,450</div><h3>kcal días de descanso</h3><p>Martes, jueves, sábado y domingo.</p></div>
+<div class="card"><div class="big">~115 g</div><h3>Proteína al día</h3><p>Protege y construye músculo, y te mantiene satisfecha.</p></div>
+<div class="card"><div class="big">0.3 kg</div><h3>Ritmo por semana</h3><p>Lento y seguro. Más rápido = pierdes músculo, energía y cabello.</p></div>
+</div></section>
+
+<section id="habitos"><h2>Mis hábitos diarios</h2><p class="sub">La comida es la mitad del resultado. Esto es la otra mitad.</p>
+<div class="grid">
+<div class="card"><div class="big">💧 2–2.5 L</div><h3>Agua</h3><p>Un vaso al despertar, y una botella siempre contigo. Ayuda a la piel, digestión y saciedad.</p></div>
+<div class="card"><div class="big">👣 8,000</div><h3>Pasos diarios</h3><p>Hoy caminas ~5,000. Sube <b>+1,000 cada semana</b>: 6k → 7k → 8k. Meta mínima 8,000; 10,000 es un bonus.</p><p>Tip: 15 min después de comer y 15 después de cenar.</p></div>
+<div class="card"><div class="big">🌙 7–8 h</div><h3>Sueño</h3><p>Dormir poco sube el hambre y frena la pérdida de grasa. Misma hora de dormir, pantallas fuera 30 min antes.</p></div>
+<div class="card"><div class="big">🏋️ 3 días</div><h3>Fuerza</h3><p>Lunes, miércoles y viernes. Sube pesos poco a poco: eso es lo que define tu cuerpo.</p></div>
+</div></section>
+
+<section id="evitar"><h2>Lo que hay que evitar</h2><p class="sub">Sin prohibiciones absurdas, solo lo que frena tus resultados.</p>
+<div class="grid">
+<div class="card"><h3>Bebidas con calorías</h3><ul class="avoid"><li>Refrescos, jugos, café con azúcar o crema</li><li>Alcohol frecuente</li></ul></div>
+<div class="card"><h3>Ultraprocesados</h3><ul class="avoid"><li>Frituras, pan dulce, galletas dulces</li><li>Comida rápida entre semana</li></ul></div>
+<div class="card"><h3>Errores comunes</h3><ul class="avoid"><li>Saltarte comidas y luego comer de más</li><li>Recortar más calorías si no baja rápido</li><li>Pesarte a diario y desanimarte</li></ul></div>
+<div class="card"><h3>Sobre el cardio intenso</h3><ul class="avoid"><li>Nada de HIIT todos los días</li><li>Cardio largo antes de las pesas</li></ul></div>
+</div></section>
+
+<section id="plan"><h2>Mi plan semanal</h2><p class="sub">5 comidas al día. Carnes y pescados en crudo; arroz, pasta y papa cocidos. Valores aproximados.</p>
+<div class="tabs" id="tabs"></div><div class="card" id="day"></div>
+<p class="sub" style="margin-top:14px">Yogurt griego natural sin azúcar (light o 0%). El huevo siempre revuelto o en omelette.</p></section>
+
+<section id="rutinas"><h2>Mis rutinas de ejercicio</h2><p class="sub">Lunes · Miércoles · Viernes (descansos de 48-72 h entre sesiones)</p>
+<div class="tabs" id="rtabs"></div><div class="card" id="rday"></div>
+<div class="grid" style="margin-top:14px">
+<div class="card"><h3>Antes de empezar (8 min)</h3><ul><li>Bici suave</li><li>Puente de glúteo sin carga y bird dog</li><li>Lo que indique tu fisio</li><li>2 series de aproximación en el primer ejercicio</li></ul></div>
+<div class="card"><h3>Reglas de ejecución</h3><ul><li>Descanso: 2-3 min en compuestos, 1-2 min en accesorios</li><li>Baja en 2-3 segundos cada repetición</li><li>Cuando llegues al tope de repeticiones en todas las series, sube 2.5-5% de carga</li><li>RIR = repeticiones que te quedan antes del fallo</li></ul></div>
+<div class="card"><h3>Bloques de 4 semanas</h3><ul><li>Semana 1: RIR 3, técnica</li><li>Semana 2: RIR 2, sube carga o reps</li><li>Semana 3: RIR 1-2, la más exigente</li><li>Semana 4: descarga, ~40% menos series</li></ul></div>
+<div class="card"><h3>Cuidando cadera y rodilla</h3><ul class="avoid"><li>Sin sentadilla de 90° o más</li><li>Sin abducción en máquina ni hip thrust en banco</li><li>Que cadera y rodilla no se cierren hacia adentro</li><li>Prensa, extensión de cuádriceps y peso muerto rumano: solo con aprobación de tu fisio y en el rango sin dolor</li></ul></div>
+<div class="card"><h3>Semáforo de dolor</h3><p>🟢 0-3/10 y sin dolor al día siguiente: sigue.</p><p>🟡 4-5/10 o molestia al día siguiente: baja carga o rango, o cambia el ejercicio.</p><p>🔴 Más de 5/10 o que persiste: para y avisa a tu fisio.</p></div>
+<div class="card"><h3>Volumen semanal</h3><p>Glúteo ~15-18 series (2×/sem) · Isquios ~10 (2×) · Espalda ~16-19 (2×) · Deltoide lateral 10 (3×) · Bíceps 5 · Tríceps 5</p></div>
+</div></section>
+
+<section id="super"><h2>Lista del súper semanal</h2><p class="sub">Cantidades para 1 persona, 7 días. Toca para ir marcando.</p><div class="shop" id="shop"></div></section>
+
+<section id="tips"><h2>Tips para que sea fácil</h2>
+<div class="grid">
+<div class="card"><h3>Meal prep del domingo</h3><ul><li>Cocer arroz y hornear papas</li><li>Desmenuzar pollo</li><li>Lavar y cortar verduras</li><li>Armar los frascos de overnight oats</li></ul></div>
+<div class="card"><h3>Desayunos para llevar</h3><ul><li>Overnight oats en frasco</li><li>Bowl de yogurt (granola aparte)</li><li>Rice cakes y croissant relleno</li></ul></div>
+<div class="card"><h3>Seguimiento</h3><ul><li>Mide cintura y cadera cada 2 semanas</li><li>Foto mensual, misma luz y pose</li><li>Pésate en ayunas, mismo día</li><li>No te guíes solo por la báscula</li></ul></div>
+<div class="card"><h3>Si algo no va bien</h3><ul><li>Sin cambios en 3 semanas: avisa para ajustar</li><li>Mucho cansancio o hambre: come un poco más</li><li>Si algo te inflama, baja esa porción</li></ul></div>
+</div></section>
+<footer>Guía general basada en tus datos; no sustituye a un profesional de la salud. ✿</footer>
+
+<script>
+const D=[
+["Lunes","Descanso","1,445 kcal · 122 g prot",[
+["Desayuno","Bowl de yogurt","250 g yogurt griego + 25 g granola + ½ taza arándanos","300"],
+["Colación","Manzana con yogurt y canela","1 manzana picada + 150 g yogurt + canela","185"],
+["Comida","Bowl de pollo","150 g pollo + ⅔ taza arroz + ¼ aguacate + brócoli, zanahoria y pimiento","465"],
+["Colación","Rice cakes con jamón y panela","2 rice cakes + 2 rebanadas jamón + 40 g panela + tomate","195"],
+["Cena","Omelette de espinaca","2 huevos + 2 claras, espinaca, jitomate y pimiento + 1 tortilla + ensalada","300"]]],
+["Martes","Entreno","1,655 kcal · 124 g prot",[
+["Desayuno","Overnight oats","40 g avena + 150 g yogurt + ½ taza leche + 1 guineo + canela","390"],
+["Colación","Mini tostadas de rice cake","2 rice cakes + ¼ aguacate + 2 rebanadas jamón","195"],
+["Comida","Tacos de bistec","3 tortillas + 150 g bistec + pico de gallo + ¼ aguacate + calabacitas","515"],
+["Colación","Licuado post-entreno","1 taza leche + ½ guineo + ½ taza fresas + 100 g yogurt","225"],
+["Cena","Pescado con papa","170 g pescado + 120 g papa al horno + brócoli y calabacita + 1 cdta aceite de oliva","330"]]],
+["Miércoles","Descanso","1,425 kcal · 119 g prot",[
+["Desayuno","Rice cakes salados y dulce","3 rice cakes: 2 con 1 huevo + 3 claras revueltos, ¼ aguacate y tomate; 1 con mermelada","345"],
+["Colación","Yogurt con mango","150 g yogurt + ½ taza mango congelado","140"],
+["Comida","Pasta cremosa con pollo","¾ taza pasta + 130 g pollo + salsa (2 cdas crema, ¼ taza leche, 10 g manchego, ajo) + espinaca y calabacita","470"],
+["Colación","Papaya con panela","1 taza papaya + 50 g queso panela","160"],
+["Cena","Ensalada de pollo","150 g pollo + espinaca y arúgula + tomate, zanahoria, pimiento + ¼ aguacate + limón","310"]]],
+["Jueves","Entreno","1,635 kcal · 113 g prot",[
+["Desayuno","Hot cakes de avena y guineo","40 g avena + ½ guineo + 1 huevo + 2 claras + canela. Topping: 100 g yogurt + ½ taza fresas","395"],
+["Colación","Galletas con manchego y uvas","4 galletas saladas + 20 g manchego + ½ taza uvas","185"],
+["Comida","Poke bowl de camarón","1 taza arroz + 150 g camarón + ¼ aguacate + pepino, zanahoria, pimiento, limón y soya","500"],
+["Colación","Yogurt con uvas","200 g yogurt + ¾ taza uvas","195"],
+["Cena","Quesadillas fit","2 tortillas + 60 g panela + 2 rebanadas jamón + espinaca + ensalada de tomate","360"]]],
+["Viernes","Entreno","1,645 kcal · 126 g prot",[
+["Desayuno","Croissant mini relleno","1 croissant chico + 1 huevo y 3 claras con espinaca + 2 rebanadas jamón + 1 taza melón","400"],
+["Colación","Rice cakes dulces","2 rice cakes + 40 g panela + 1 cda mermelada","200"],
+["Comida","Tacos de pescado","3 tortillas + 170 g pescado + repollo y zanahoria + pico de gallo + ¼ aguacate","465"],
+["Colación","Licuado de mango","1 taza leche + ½ taza mango + 100 g yogurt + 1 cda avena","220"],
+["Cena","Pollo al limón","150 g pollo + 120 g papa + brócoli y calabacita + 1 cdta aceite de oliva","360"]]],
+["Sábado","Descanso","1,480 kcal · 125 g prot",[
+["Desayuno","Chilaquiles fit al horno","3 tostadas horneadas + salsa + 1 huevo y 2 claras revueltos con 50 g pollo + 30 g panela","350"],
+["Colación","Sándwich de galletas","4 galletas saladas + 20 g manchego + 2 rebanadas jamón","180"],
+["Comida","Bistec con papa","150 g bistec + 150 g papa al horno + ensalada de hojas con tomate y pimiento + ¼ aguacate","450"],
+["Colación","Melón con yogurt","1 taza melón + 150 g yogurt","145"],
+["Cena","Pizza en pan pita","1 pan pita + salsa de tomate + 80 g pollo + 15 g manchego + pimiento","355"]]],
+["Domingo","Descanso","1,450 kcal · 109 g prot",[
+["Desayuno","Huevos a la mexicana","1 huevo + 3 claras revueltos con jitomate y pimiento + 1 tortilla + ¼ aguacate + ¾ taza papaya","355"],
+["Colación","Licuado de fresa","1 taza leche + ½ taza fresas + 100 g yogurt","175"],
+["Comida","Calabacitas rellenas gratinadas","2 calabacitas rellenas de 120 g carne molida con jitomate, zanahoria y pimiento + 20 g manchego + 100 g papa al horno","420"],
+["Colación","Manzana con panela","1 manzana + 40 g queso panela","160"],
+["Cena","Tostadas de pollo","2 tostadas horneadas + 130 g pollo + ¼ aguacate + tomate, pimiento y zanahoria","340"]]]];
+D[0][0]="Martes";D[1][0]="Lunes";D[2][0]="Jueves";D[3][0]="Miércoles";const O=["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];D.sort((x,y)=>O.indexOf(x[0])-O.indexOf(y[0]));
+const S=[
+["🥩 Proteínas",["Pechuga de pollo — 900 g","Bistec de res — 300 g","Carne molida de res — 150 g","Pescado blanco (tilapia/robalo) — 350 g","Camarón — 150 g","Huevos — 1 docena","Claras líquidas — 1 cartón (o 8 huevos más)","Jamón de pavo — 1 paquete (10 rebanadas)"]],
+["🥛 Lácteos",["Yogurt griego natural — 1.8 kg","Leche — 1 L","Crema — 1 envase chico","Queso panela — 300 g","Queso manchego — 100 g"]],
+["🌾 Carbohidratos",["Arroz — 1 bolsa","Pasta — 1 paquete chico","Papa — 600 g","Tortillas de maíz — 12","Tostadas horneadas — 1 paquete","Rice cakes — 1 paquete (9+)","Avena — 1 bolsa","Granola — 1 bolsa chica","Croissant chico — 1","Pan pita — 1","Galletas saladas — 1 paquete"]],
+["🍓 Frutas",["Guineo — 3","Manzana — 2","Uvas — 250 g","Arándanos — 1 charola chica","Fresas congeladas — 1 bolsa","Mango congelado — 1 bolsa","Melón — ¼ pieza","Papaya — ½ pieza chica","Limones — 6"]],
+["🥑 Verduras",["Aguacate — 3","Jitomate — 1 kg","Espinaca — 1 bolsa grande","Arúgula — 1 bolsa","Hojas mixtas (sin lechuga) — 1 bolsa","Calabacita — 700 g","Brócoli — 2 cabezas","Zanahoria — 500 g","Pimientos (colores) — 3","Pepino — 2","Repollo — ¼ pieza","Cebolla — 2","Ajo y cilantro"]],
+["🫙 Despensa",["Mermelada — 1 frasco","Salsa verde o roja — 1","Salsa de soya — 1","Aceite de oliva — 1","Canela molida — 1"]]];
+const tabs=document.getElementById('tabs'),day=document.getElementById('day');
+function show(i){[...tabs.children].forEach((b,j)=>b.classList.toggle('on',i==j));const d=D[i];
+day.innerHTML=`<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px"><span class="script" style="font-size:2rem;color:var(--terra)">${d[0]}</span><span><span class="pill">${d[1]==='Entreno'?'🏋️ Día de entreno':'🌿 Día de descanso'}</span><span class="pill">${d[2]}</span></span></div>`+d[3].map(m=>`<div class="meal"><b class="t">${m[0]}</b><div><div class="n">${m[1]}</div><div class="d">${m[2]}</div></div><div class="k">${m[3]} kcal</div></div>`).join('')}
+D.forEach((d,i)=>{const b=document.createElement('button');b.textContent=d[0];b.onclick=()=>show(i);tabs.appendChild(b)});show(0);
+document.getElementById('shop').innerHTML=S.map(s=>`<div class="card"><h3>${s[0]}</h3>${s[1].map(x=>`<label><input type="checkbox"><span>${x}</span></label>`).join('')}</div>`).join('');
+const R=[
+["Lunes","Inferior A: glúteo e isquios (fuerte) + hombro",[
+["Peso muerto rumano","4 × 6-10","RIR 2-3"],
+["Puente de glúteo en piso con carga y pausa de 2 s","3 × 8-12","RIR 2"],
+["Curl femoral sentado","3 × 10-15","RIR 1-2"],
+["Prensa 45°, pies altos, rango controlado (si tu fisio la aprueba)","3 × 10-15","RIR 2-3"],
+["Patada de glúteo en polea","3 × 12-15 por lado","RIR 1-2"],
+["Elevaciones laterales en polea","3 × 12-20","RIR 1"],
+["Dead bug","3 × 8-10 por lado","Control"]]],
+["Miércoles","Superior: espalda, hombro y brazos",[
+["Jalón al pecho agarre ancho","4 × 8-12","RIR 2"],
+["Press de hombro con mancuernas","3 × 6-10","RIR 2"],
+["Remo en máquina con pecho apoyado","3 × 8-12","RIR 2"],
+["Elevaciones laterales en polea","4 × 12-20","RIR 1"],
+["Pullover en polea","3 × 12-15","RIR 1-2"],
+["Pájaros (deltoide posterior)","3 × 15-20","RIR 1-2"],
+["Biserie: curl inclinado + tríceps sobre la cabeza en polea","3 × 10-15 + 3 × 10-15","RIR 1-2"]]],
+["Viernes","Inferior B: glúteo, isquios + espalda",[
+["Extensión de espalda a 45° con carga (énfasis glúteo)","4 × 8-12","RIR 2"],
+["Pull-through en polea","3 × 10-15","RIR 2"],
+["Curl femoral acostado","3 × 10-12","RIR 1-2"],
+["Puente de glúteo con pausa, repeticiones altas","3 × 15-20","RIR 1"],
+["Jalón al pecho agarre neutro","3 × 10-12","RIR 2"],
+["Remo unilateral con mancuerna","3 × 10-12","RIR 2"],
+["Elevaciones laterales","3 × 15-20","RIR 0-1"],
+["Biserie: curl en polea + jalón de tríceps","2 × 12 + 2 × 12-15","RIR 1-2"]]]];
+const rt=document.getElementById('rtabs'),rd=document.getElementById('rday');
+function rshow(i){[...rt.children].forEach((b,j)=>b.classList.toggle('on',i==j));const d=R[i];
+rd.innerHTML=`<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px"><span class="script" style="font-size:2rem;color:var(--terra)">${d[0]}</span><span class="pill">${d[1]}</span></div>`+d[2].map((e,k)=>`<div class="meal"><b class="t">${k+1}</b><div class="n">${e[0]}</div><div class="k"><b>${e[1]}</b><br>${e[2]}</div></div>`).join('')}
+R.forEach((d,i)=>{const b=document.createElement('button');b.textContent=d[0];b.onclick=()=>rshow(i);rt.appendChild(b)});rshow(0);
+</script></body></html>
